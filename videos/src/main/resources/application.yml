@@ -1,0 +1,18 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: cloud-video
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}
+      server-addr: 192.168.175.161:8848
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.175.161:3306/yingxue?serverTimezone=UTC&useSSL=false
+    username: root
+    password: 20010106
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

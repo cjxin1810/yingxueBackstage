@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/administrators/administrators.iml" filepath="$PROJECT_DIR$/administrators/administrators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/categoryMoudle/categoryMoudle.iml" filepath="$PROJECT_DIR$/categoryMoudle/categoryMoudle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userMoudle/userMoudle.iml" filepath="$PROJECT_DIR$/userMoudle/userMoudle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videos/videos.iml" filepath="$PROJECT_DIR$/videos/videos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yingxueDemo1.iml" filepath="$PROJECT_DIR$/yingxueDemo1.iml" />
+    </modules>
+  </component>
+</project>

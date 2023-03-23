@@ -1,0 +1,7 @@
+# Project exclude paths
+/administrators/target/
+/categoryMoudle/target/
+/commons/target/
+/gateway/target/
+/userMoudle/target/
+/videos/target/

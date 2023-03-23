@@ -1,0 +1,49 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    nacos:
+      server-addr: 192.168.175.161:8848
+      discovery:
+        server-addr: ${spring.cloud.nacos.server-addr}
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      routes:
+        - id: admin_router
+          uri: lb://cloud-admin
+          predicates:
+            - Path=/admin/tokens/**,/admin/admin-user
+        - id: user_router
+          uri: lb://cloud-user
+          predicates:
+            - Path=/admin/users/**
+          filters:
+            - StripPrefix=1
+            - PrefixPath=/user
+            - Token=true
+        - id: category_router
+          uri: lb://cloud-category
+          predicates:
+            - Path=/admin/categories/**
+          filters:
+            - StripPrefix=1
+            - PrefixPath=/category
+            - Token=true
+        - id: videos_router
+          uri: lb://cloud-video
+          predicates:
+            - Path=/admin/videos/**
+          filters:
+            - StripPrefix=1
+            - PrefixPath=/video
+            - Token=true
+  redis:
+    host: 192.168.175.161
+    port: 6379

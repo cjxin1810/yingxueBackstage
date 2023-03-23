@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="videos" />
+        <module name="categoryMoudle" />
+        <module name="userMoudle" />
+        <module name="commons" />
+        <module name="administrators" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="administrators" target="8" />
+      <module name="categoryMoudle" target="8" />
+      <module name="commons" target="8" />
+      <module name="gateway" target="8" />
+      <module name="userMoudle" target="8" />
+      <module name="videos" target="8" />
+      <module name="yingxueDemo1" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="administrators" options="-parameters" />
+      <module name="categoryMoudle" options="-parameters" />
+      <module name="commons" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="userMoudle" options="-parameters" />
+      <module name="videos" options="-parameters" />
+      <module name="yingxueDemo1" options="" />
+    </option>
+  </component>
+</project>
